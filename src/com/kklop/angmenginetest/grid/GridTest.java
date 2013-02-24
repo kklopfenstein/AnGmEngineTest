@@ -40,4 +40,5 @@ public class GridTest extends AndroidTestCase {
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
 		assertTrue("Should have grid id", sprite2.getGridId() == 1);
 	}
+	
 }
