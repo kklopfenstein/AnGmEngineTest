@@ -32,11 +32,11 @@ public class GridTest extends AndroidTestCase {
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
 		Sprite sprite = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0 
 				&& sprite.getBotLeftCrnr().y > 0);
 		Sprite sprite2 = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
@@ -52,11 +52,11 @@ public class GridTest extends AndroidTestCase {
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
 		Sprite sprite = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
 		Sprite sprite2 = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 23, 23, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 23, 23, 60, null);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
@@ -79,11 +79,11 @@ public class GridTest extends AndroidTestCase {
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
 		Sprite sprite = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
 		Sprite sprite2 = new MockSprite(BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 900, 900, 60);
+				com.kklop.angmenginetest.R.drawable.ghost), 900, 900, 60, null);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
