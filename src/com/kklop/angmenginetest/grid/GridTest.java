@@ -91,7 +91,7 @@ public class GridTest extends AndroidTestCase {
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
 		Sprite sprite2 = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 900, 900, 60, null);
+				com.kklop.angmenginetest.R.drawable.ghost), 900, 800, 60, null);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
