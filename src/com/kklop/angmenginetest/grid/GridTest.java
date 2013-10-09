@@ -39,12 +39,10 @@ public class GridTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND1, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite = new MockSprite(BOUND1, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0 
 				&& sprite.getBotLeftCrnr().y > 0);
-		Sprite sprite2 = new MockSprite(BOUND1, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite2 = new MockSprite(BOUND1, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
@@ -59,12 +57,10 @@ public class GridTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
-		Sprite sprite2 = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 23, 23, 60, null);
+		Sprite sprite2 = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 23, 23, 60, null, res);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
@@ -86,12 +82,10 @@ public class GridTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
-		Sprite sprite2 = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 900, 800, 60, null);
+		Sprite sprite2 = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 900, 800, 60, null, res);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);
@@ -124,12 +118,10 @@ public class GridTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		assertTrue("Bot left crnr is not null", sprite.getBotLeftCrnr().x > 0
 				&& sprite.getBotLeftCrnr().y > 0);
-		Sprite sprite2 = new MockSprite(BOUND2, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 900, 800, 60, null);
+		Sprite sprite2 = new MockSprite(BOUND2, com.kklop.angmenginetest.R.drawable.ghost, 900, 800, 60, null, res);
 		grid.addSprite(sprite);
 		grid.addSprite(sprite2);
 		assertTrue("Should have grid id", sprite.getGridId() == 0);

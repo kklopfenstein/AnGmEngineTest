@@ -26,10 +26,8 @@ public class SpriteTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
-		Sprite sprite2 = new MockSprite(BOUND, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 23, 23, 60, null);
+		Sprite sprite = new MockSprite(BOUND, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
+		Sprite sprite2 = new MockSprite(BOUND, com.kklop.angmenginetest.R.drawable.ghost, 23, 23, 60, null, res);
 		assertTrue("Sprites have collided", sprite.collided(sprite2));
 	}
 	
@@ -40,8 +38,7 @@ public class SpriteTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite = new MockSprite(BOUND, BitmapFactory.decodeResource(res, 
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite = new MockSprite(BOUND, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		Thread.sleep(100);
 		sprite.update(System.currentTimeMillis(), 120, 120, 2, false);
 		assertTrue("Sprite has moved.", sprite.getX() > 25 
@@ -55,10 +52,8 @@ public class SpriteTest extends AndroidTestCase {
 		Log.d(TAG, "Bitmap width is " + bmp.getWidth() + 
 				" and bitmap height is " + bmp.getHeight());
 		assertTrue("Bitmap is valid.", bmp != null && bmp.getWidth() > 0);
-		Sprite sprite1 = new MockSprite(BOUND, BitmapFactory.decodeResource(res,
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
-		Sprite sprite2 = new MockSprite(BOUND, BitmapFactory.decodeResource(res,
-				com.kklop.angmenginetest.R.drawable.ghost), 25, 25, 60, null);
+		Sprite sprite1 = new MockSprite(BOUND, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
+		Sprite sprite2 = new MockSprite(BOUND, com.kklop.angmenginetest.R.drawable.ghost, 25, 25, 60, null, res);
 		assertTrue("Sprites are colliding.", sprite1.collided(sprite2));
 		sprite2.addHitbox(new HitBox(0, (bmp.getHeight()-1), 
 				bmp.getWidth(), bmp.getHeight()));
